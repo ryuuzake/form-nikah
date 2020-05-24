@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
   },
   jumbotron: {
-    marginTop: theme.spacing(35),
+    marginTop: theme.spacing(24),
     marginBottom: theme.spacing(8),
     color: 'white',
     textAlign: 'center',

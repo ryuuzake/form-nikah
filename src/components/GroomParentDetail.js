@@ -12,7 +12,7 @@ export default function GroomParentDetail(props) {
 
   return (
     <Grid item xs={12} sm={8} md={8} component={Paper} elevation={6} square style={{ backgroundColor: "#FBFCFD" }}>
-      <div className="paper">
+      <div className="paper" style={{ marginTop: '32px'}}>
         <Box borderBottom={1} width="100%" pb={3} pl={6} pr={24} m={3} fontWeight="fontWeightBold">
           <Typography variant="h5" align="left">
             Identitas Orang Tua Pria
@@ -22,7 +22,7 @@ export default function GroomParentDetail(props) {
           <form className="form" noValidate>
             <Grid container direction="row" justify="space-between">
               <Grid container direction="column" xs={12} sm={4} md={5}>
-                <Grid item className="row">
+                <Grid item>
                   <Typography variant="h6" align="center">
                     Identitas Bapak
                   </Typography>
@@ -120,7 +120,7 @@ export default function GroomParentDetail(props) {
                 </Grid>
               </Grid>
               <Grid container direction="column" xs={12} sm={4} md={5}>
-                <Grid item className="row">
+                <Grid item>
                   <Typography variant="h6" align="center">
                     Identitas Ibu
                   </Typography>
@@ -217,11 +217,11 @@ export default function GroomParentDetail(props) {
                   </Paper>
                 </Grid>
               </Grid>
-              <Grid container justify="space-between" className="row">
-                <Button variant="contained" color="secondary" className="submit" onClick={handleBack}>
+              <Grid container justify="space-between">
+                <Button variant="contained" color="secondary" onClick={handleBack}>
                   Back
                 </Button>
-                <Button variant="contained" color="primary" className="submit" onClick={handleNext}>
+                <Button variant="contained" color="primary" onClick={handleNext}>
                   Next
                 </Button>
               </Grid>

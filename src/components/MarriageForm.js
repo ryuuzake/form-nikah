@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
   stepperTitle: {
       color: 'white',
       fontWeight: 600,
-      paddingTop: theme.spacing(24),
+      paddingTop: theme.spacing(10),
   },
   inputBase: {
       padding: '2px 4px',
@@ -70,7 +70,7 @@ export default function MarriageForm(props) {
     maleReligion: null,
     maleOccupation: null,
     maleAddress: null,
-    maleMarried: '',
+    maleMarried: null,
     maleExName: null,
     maleChildName: null,
     maleFatherFamilyName: null,
@@ -91,7 +91,7 @@ export default function MarriageForm(props) {
     femaleReligion: null,
     femaleOccupation: null,
     femaleAddress: null,
-    femaleMarried: '',
+    femaleMarried: null,
     femaleExName: null,
     femaleChildName: null,
     femaleFatherFamilyName: null,
@@ -136,7 +136,7 @@ export default function MarriageForm(props) {
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
       <Grid item xs={false} sm={4} md={4} className={classes.image} style={{ backgroundImage: `url(${image[activeStep]})` }}>
-        <Typography variant="h3" align="center" className={classes.stepperTitle}>
+        <Typography variant="h4" align="center" className={classes.stepperTitle}>
           Formulir Pencatatan Pernikahan
         </Typography>
         <VerticalStepper activeStep={activeStep} />
