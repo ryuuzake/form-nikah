@@ -1,0 +1,41 @@
+div.row {
+  margin-bottom: 32px;
+}
+
+.row button.submit {
+  margin-top: 64px;
+}
+
+.paper {
+  margin: 64px 32px;
+  display: 'flex';
+  flex-direction: 'column';
+  align-items: 'center';
+}
+
+.form {
+  width: '100%';
+  margin-top: 8px;
+}
+
+.submit {
+  margin: 24px 0px 16px;
+}
+
+.stepperTitle {
+  color: 'white';
+  font-weight: 600;
+  padding-top: 192px;
+}
+
+.inputBase {
+  padding: '2px 4px';
+  display: 'flex';
+  align-items: 'center';
+  width: 400;
+}
+
+.input {
+  margin-left: 8px;
+  flex: 1;
+}
