@@ -25,4 +25,3 @@ def form():
         return jsonify({'form': form_filtered}), 201
     forms = Form.query.all()
     return jsonify({'form': [item.to_dict() for item in forms]}), 200
-  
